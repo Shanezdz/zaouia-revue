@@ -74,10 +74,19 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
           <span>Autrice & directrice éditoriale de Zaouia</span>
         </div>
 
-        <div className="article-share">
-          <span>Ce Cahier mérite d’être prolongé ?</span>
-          <a href={linkedInShareUrl} target="_blank" rel="noopener noreferrer" className="linkedin-share-button" aria-label={`Partager le numéro ${item.numero} de Zaouia sur LinkedIn`}>
-            Partager ce Cahier sur LinkedIn ↗
+        <div style={{ maxWidth: 820, margin: "34px auto 0", padding: "28px 0 34px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap", borderBottom: "1px solid rgba(23,63,50,.16)" }}>
+          <div>
+            <div className="section-kicker" style={{ marginBottom: 8 }}>Partager</div>
+            <div style={{ color: "#6c746f", fontSize: ".95rem" }}>Prolonger la réflexion auprès de votre réseau.</div>
+          </div>
+          <a
+            href={linkedInShareUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Partager le numéro ${item.numero} de Zaouia sur LinkedIn`}
+            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", minHeight: 46, padding: "12px 20px", border: "1px solid #173f32", borderRadius: 999, color: "#173f32", fontSize: ".88rem", fontWeight: 600, letterSpacing: ".02em", whiteSpace: "nowrap" }}
+          >
+            Partager sur LinkedIn ↗
           </a>
         </div>
 
