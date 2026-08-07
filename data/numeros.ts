@@ -5,6 +5,7 @@ export type Numero = {
   subtitle: string;
   image: string;
   theme: string;
+  keywords: string[];
 };
 
 export const numeros: Numero[] = [
@@ -15,6 +16,7 @@ export const numeros: Numero[] = [
     subtitle: "Ce que la ville protège lorsqu’elle choisit où le soleil s’arrête.",
     image: "/images/numero-4.png",
     theme: "Territoires · Vivant",
+    keywords: ["Ville", "Ombre", "Chaleur", "Adaptation climatique", "Vivant", "Générations futures", "Responsabilité"],
   },
   {
     numero: 3,
@@ -23,6 +25,7 @@ export const numeros: Numero[] = [
     subtitle: "Lire les signaux faibles d’un monde qui ne se transforme pas à la même vitesse partout.",
     image: "/images/numero-3.png",
     theme: "Prospective · Signaux faibles",
+    keywords: ["Idées", "Prospective", "Signaux faibles", "Ruptures", "Transformations", "Futurs", "Générations futures", "Responsabilité"],
   },
   {
     numero: 2,
@@ -31,6 +34,7 @@ export const numeros: Numero[] = [
     subtitle: "Une onomastique de l’État pour penser autrement les missions publiques.",
     image: "/images/numero-2.png",
     theme: "Politiques publiques · État",
+    keywords: ["Idées", "État", "Politiques publiques", "Onomastique", "Souveraineté", "Transformation publique", "Algérie", "Générations futures", "Responsabilité"],
   },
   {
     numero: 1,
@@ -39,5 +43,6 @@ export const numeros: Numero[] = [
     subtitle: "Et si la lucidité était, avant tout, une question d’angle ?",
     image: "/images/numero-1.png",
     theme: "Idées · Impact",
+    keywords: ["Idées", "Angle", "Hors champ", "Regard", "Impact", "Complexité", "Générations futures", "Responsabilité"],
   },
 ];
