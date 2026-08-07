@@ -9,6 +9,7 @@ const signaux = [
   { id: "006", theme: "Hors champ", title: "Quand ce qui n’est pas mesuré finit par structurer la réalité.", text: "Temps d’attente, fatigue, qualité de l’ombre, confiance, entretien, usages informels : nombre de dimensions décisives demeurent souvent hors des indicateurs. Leur invisibilité statistique ne les rend pas secondaires. Elle peut au contraire révéler les angles morts à partir desquels une transformation devient perceptible." },
   { id: "007", theme: "Ombre", title: "Quand l’absence devient une infrastructure.", text: "L’ombre n’est pas seulement ce qui manque à la lumière. Dans les villes exposées à la chaleur, elle devient une condition de mobilité, de repos, d’usage de l’espace public et parfois d’égalité territoriale. Ce qui semblait résiduel peut ainsi devenir un indicateur central d’habitabilité." },
   { id: "008", theme: "Vivant", title: "Quand protéger le vivant cesse d’être un sujet sectoriel.", text: "L’eau, les sols, les arbres, les paysages, la biodiversité et la santé ne fonctionnent pas comme des politiques séparées. Leur interdépendance fait apparaître une autre lecture de l’action publique : le vivant n’est plus seulement un domaine à protéger, mais une condition transversale de résilience et de continuité territoriale." },
+  { id: "009", theme: "Finance verte", title: "Quand le budget devient un instrument de transition.", text: "Les politiques climatiques ne se jouent pas seulement dans les stratégies ou les discours. Elles se lisent aussi dans la manière dont les ressources publiques sont orientées, suivies et évaluées. Un budget peut devenir une carte des priorités réelles d’un État.", link: "https://mizaniyakhadra.vercel.app/", linkLabel: "Explorer Mizaniya Khadra →" },
 ];
 
 export default function SignauxPage() {
@@ -25,6 +26,11 @@ export default function SignauxPage() {
               <div className="signal-meta">Signal {signal.id} · {signal.theme}</div>
               <h2>{signal.title}</h2>
               <p>{signal.text}</p>
+              {signal.link && (
+                <a className="text-link" href={signal.link} target="_blank" rel="noopener noreferrer">
+                  {signal.linkLabel}
+                </a>
+              )}
             </article>
           ))}
         </div>
