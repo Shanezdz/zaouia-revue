@@ -27,8 +27,8 @@ export const numeros: Numero[] = [
   {
     numero: 2,
     slug: "transformations-qui-s-esquissent-2",
-    title: "Éclairer les transformations qui s’esquissent",
-    subtitle: "Les mots précèdent souvent les politiques.",
+    title: "Les mots précèdent souvent les politiques.",
+    subtitle: "Une onomastique de l’État pour penser autrement les missions publiques.",
     image: "/images/numero-2.png",
     theme: "Politiques publiques · État",
   },
