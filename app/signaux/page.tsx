@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 
+// Editorial signals collection for Zaouia.
 const signaux = [
   { id: "001", theme: "Territoires", title: "Quand la chaleur commence à modifier les horaires de la ville.", text: "Un changement d’horaire peut sembler anecdotique. Répété dans plusieurs lieux, il peut signaler une adaptation plus profonde des rythmes urbains à la chaleur. Le temps devient alors lui aussi une infrastructure climatique." },
   { id: "002", theme: "État", title: "Quand un nouveau vocabulaire précède une nouvelle politique publique.", text: "Résilience, souveraineté, vivant, transformation : certains mots apparaissent avant que les organigrammes et les budgets ne changent. Leur circulation peut révéler le déplacement progressif des catégories à travers lesquelles l’action publique pense ses missions." },
