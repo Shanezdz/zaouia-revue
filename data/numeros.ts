@@ -19,10 +19,10 @@ export const numeros: Numero[] = [
   {
     numero: 3,
     slug: "transformations-qui-s-esquissent-3",
-    title: "Éclairer les transformations qui s’esquissent",
-    subtitle: "Une lecture des signaux émergents, des territoires et des futurs possibles.",
+    title: "Ce qui change avant que nous le voyions",
+    subtitle: "Lire les signaux faibles d’un monde qui ne se transforme pas à la même vitesse partout.",
     image: "/images/numero-3.png",
-    theme: "Idées · Prospective",
+    theme: "Prospective · Signaux faibles",
   },
   {
     numero: 2,
