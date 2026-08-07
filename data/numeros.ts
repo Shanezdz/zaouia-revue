@@ -34,9 +34,9 @@ export const numeros: Numero[] = [
   },
   {
     numero: 1,
-    slug: "numero-fondateur",
-    title: "Le numéro fondateur",
-    subtitle: "L’ouverture de Zaouia, revue d’idées, de territoires et d’impact.",
+    slug: "eloge-de-l-angle",
+    title: "Éloge de l’angle",
+    subtitle: "Et si la lucidité était, avant tout, une question d’angle ?",
     image: "/images/numero-1.png",
     theme: "Idées · Impact",
   },
