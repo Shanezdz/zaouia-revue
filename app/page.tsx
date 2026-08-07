@@ -51,6 +51,7 @@ export default function Home() {
         <div className="section-kicker">À propos</div>
         <h2>Une revue pour penser les transformations avant qu’elles ne deviennent évidentes.</h2>
         <p>Zaouia explore les idées, les territoires, les politiques publiques, les signaux faibles et les formes nouvelles de l’impact. Elle s’intéresse aussi à ce qui demeure hors champ, aux zones d’ombre, aux dynamiques invisibles et aux transformations discrètes qui précèdent souvent les basculements visibles. Le site prolonge la newsletter LinkedIn en constituant progressivement une archive éditoriale indépendante.</p>
+        <p><strong>Zaouia est conçue et écrite par Shanez Kechroud Beghdadi, autrice et directrice éditoriale de la revue.</strong></p>
       </section>
 
       <footer>
