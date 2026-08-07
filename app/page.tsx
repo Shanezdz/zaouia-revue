@@ -53,9 +53,12 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
-        <div>ZAOUIA</div>
-        <div>Architectures de l’impact</div>
+      <footer className="site-footer">
+        <div className="footer-brand">
+          <strong>ZAOUIA</strong>
+          <span>Architectures de l’impact</span>
+        </div>
+        <p>Zaouia explore les idées, les territoires, les politiques publiques, les signaux faibles et les formes nouvelles de l’impact. Elle s’intéresse aussi à ce qui demeure hors champ, aux zones d’ombre et aux transformations discrètes qui échappent encore au regard. Le site prolonge la newsletter LinkedIn en constituant progressivement une archive éditoriale indépendante.</p>
       </footer>
     </main>
   );
