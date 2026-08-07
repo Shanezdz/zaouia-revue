@@ -40,7 +40,7 @@ export default function Home() {
             <div className="section-kicker">Archives éditoriales</div>
             <h2>Les Cahiers de Zaouia</h2>
           </div>
-          <p>Une collection de textes pour regarder autrement les politiques publiques, les territoires, le vivant et les futurs possibles.</p>
+          <p>Une collection de textes pour regarder autrement les politiques publiques, les territoires, le vivant et les futurs possibles, tout en interrogeant le legs que nous choisissons de transmettre aux générations futures.</p>
         </div>
         <div className="issues-grid">
           {archiveNumeros.map((item) => <IssueCard key={item.numero} item={item} />)}
