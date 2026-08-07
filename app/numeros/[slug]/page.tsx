@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Numero1Article from "@/components/Numero1Article";
 import Numero2Article from "@/components/Numero2Article";
+import Numero4Article from "@/components/Numero4Article";
 import { numeros } from "@/data/numeros";
 
 export function generateStaticParams() {
@@ -36,6 +37,8 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
           <Numero1Article />
         ) : item.numero === 2 ? (
           <Numero2Article />
+        ) : item.numero === 4 ? (
+          <Numero4Article />
         ) : (
           <p className="article-note">Le contenu intégral de ce numéro peut être ajouté ici progressivement. Cette page est déjà structurée pour accueillir le texte, les idées clés, les références, les ressources complémentaires et le lien vers la publication LinkedIn.</p>
         )}
