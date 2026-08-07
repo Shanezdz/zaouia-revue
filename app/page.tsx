@@ -4,7 +4,10 @@ import IssueCard from "@/components/IssueCard";
 import { numeros } from "@/data/numeros";
 
 export default function Home() {
-  const latest = numeros[0];
+  const latest = numeros.reduce((current, item) =>
+    item.numero > current.numero ? item : current
+  );
+  const archiveNumeros = [...numeros].sort((a, b) => a.numero - b.numero);
 
   return (
     <main>
@@ -40,7 +43,7 @@ export default function Home() {
           <p>Une collection de textes pour regarder autrement les politiques publiques, les territoires, le vivant et les futurs possibles.</p>
         </div>
         <div className="issues-grid">
-          {numeros.map((item) => <IssueCard key={item.numero} item={item} />)}
+          {archiveNumeros.map((item) => <IssueCard key={item.numero} item={item} />)}
         </div>
       </section>
 
