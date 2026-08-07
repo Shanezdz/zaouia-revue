@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
+import Numero1Article from "@/components/Numero1Article";
 import { numeros } from "@/data/numeros";
 
 export function generateStaticParams() {
@@ -30,7 +31,11 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
         </div>
       </section>
       <section className="article-body">
-        <p className="article-note">Le contenu intégral de ce numéro peut être ajouté ici progressivement. Cette page est déjà structurée pour accueillir le texte, les idées clés, les références, les ressources complémentaires et le lien vers la publication LinkedIn.</p>
+        {item.numero === 1 ? (
+          <Numero1Article />
+        ) : (
+          <p className="article-note">Le contenu intégral de ce numéro peut être ajouté ici progressivement. Cette page est déjà structurée pour accueillir le texte, les idées clés, les références, les ressources complémentaires et le lien vers la publication LinkedIn.</p>
+        )}
       </section>
     </main>
   );
