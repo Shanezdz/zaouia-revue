@@ -1,7 +1,7 @@
 export default function Numero3Article() {
   return (
-    <article className="longform">
-      <p className="article-lead">Les grandes transformations ont un défaut : nous les reconnaissons souvent lorsqu’elles sont déjà devenues évidentes.</p>
+    <article className="longform-article">
+      <p>Les grandes transformations ont un défaut : nous les reconnaissons souvent lorsqu’elles sont déjà devenues évidentes.</p>
       <p>Lorsqu’une technologie bouleverse un métier, lorsqu’un territoire commence à manquer durablement d’eau, lorsqu’une génération modifie son rapport au travail, lorsqu’une pratique autrefois marginale devient ordinaire ou lorsqu’une institution découvre que ses catégories ne correspondent plus à la société qu’elle administre, nous parlons volontiers de rupture.</p>
       <p>Mais la rupture n’est presque jamais née le jour où nous l’avons nommée.</p>
       <p>Elle était déjà là.</p>
@@ -142,7 +142,7 @@ export default function Numero3Article() {
       <p>Le rôle de la prospective n’est pas d’éclairer tout l’horizon.</p>
       <p>Il est parfois plus modeste et plus utile.</p>
       <blockquote><strong>Éclairer ce qui commence à bouger dans la pénombre.</strong></blockquote>
-      <p className="article-signature"><em>Ce texte a été conçu et rédigé avec l’assistance de l’intelligence artificielle, sous direction éditoriale humaine.</em></p>
+      <p className="article-closing"><em>Ce texte a été conçu et rédigé avec l’assistance de l’intelligence artificielle, sous direction éditoriale humaine.</em></p>
     </article>
   );
 }
