@@ -1,57 +1,86 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
-import IssueCard from "@/components/IssueCard";
 import { numeros } from "@/data/numeros";
 
 export default function Home() {
-  const latest = numeros.reduce((current, item) =>
-    item.numero > current.numero ? item : current
-  );
-  const archiveNumeros = [...numeros].sort((a, b) => a.numero - b.numero);
+  const founding = numeros.find((item) => item.numero === 1)!;
+  const latest = numeros.reduce((current, item) => item.numero > current.numero ? item : current);
+  const otherIssues = [...numeros]
+    .filter((item) => item.numero !== 1 && item.numero !== latest.numero)
+    .sort((a, b) => a.numero - b.numero);
 
   return (
     <main>
       <Header />
-      <section className="hero">
-        <div className="hero-copy">
-          <div className="eyebrow">Architectures de l’impact</div>
-          <h1>Zaouia</h1>
-          <p className="hero-lead">Éclairer les transformations qui s’esquissent.</p>
-          <div className="hero-themes">Idées · Territoires · Vivant · Générations futures</div>
-        </div>
-        <div className="hero-art" aria-hidden="true"><span /></div>
+
+      <section className="editorial-hero">
+        <div className="eyebrow">Architectures de l’impact</div>
+        <h1>Regarder depuis l’angle.</h1>
+        <p>Éclairer les transformations qui s’esquissent, interroger le hors champ et ce que nous choisissons de léguer aux générations futures.</p>
+        <div className="hero-themes">Idées · Territoires · Vivant · Générations futures</div>
       </section>
 
-      <section className="latest">
-        <div className="section-kicker">Dernière édition — N°{latest.numero}</div>
-        <div className="latest-grid">
-          <Image src={latest.image} alt={`Couverture Zaouia numéro ${latest.numero}`} width={1000} height={1300} className="latest-image" />
-          <div className="latest-copy">
-            <h2>{latest.title}</h2>
-            <p>{latest.subtitle}</p>
-            <a className="text-link" href={`/numeros/${latest.slug}`}>Lire le numéro →</a>
-          </div>
+      <section className="founding-issue">
+        <div className="founding-copy">
+          <div className="section-kicker">N°1 · Le texte fondateur</div>
+          <h2>{founding.title}</h2>
+          <p className="founding-subtitle">{founding.subtitle}</p>
+          <p className="founding-note">Une invitation à déplacer le regard, à considérer le hors champ et à interroger ce que nos cadres habituels rendent invisible.</p>
+          <Link className="text-link" href={`/numeros/${founding.slug}`}>Lire le N°1 →</Link>
+        </div>
+        <Link href={`/numeros/${founding.slug}`} className="founding-cover" aria-label="Lire Éloge de l’angle">
+          <Image src={founding.image} alt="Couverture Zaouia N°1 — Éloge de l’angle" width={1000} height={1300} />
+        </Link>
+      </section>
+
+      <section className="current-issue">
+        <div className="current-cover">
+          <Image src={latest.image} alt={`Couverture Zaouia numéro ${latest.numero}`} width={1000} height={1300} />
+        </div>
+        <div className="current-copy">
+          <div className="section-kicker">À la une · N°{latest.numero}</div>
+          <h2>{latest.title}</h2>
+          <p>{latest.subtitle}</p>
+          <Link className="text-link" href={`/numeros/${latest.slug}`}>Lire le dernier Cahier →</Link>
         </div>
       </section>
 
-      <section id="numeros" className="issues-section">
-        <div className="section-heading">
-          <div>
-            <div className="section-kicker">Archives éditoriales</div>
-            <h2>Les Cahiers de Zaouia</h2>
-          </div>
-          <p>Une collection de textes pour regarder autrement les politiques publiques, les territoires, le vivant et les futurs possibles, tout en interrogeant le legs que nous choisissons de transmettre aux générations futures.</p>
+      <section id="numeros" className="quiet-archive">
+        <div className="archive-heading">
+          <div className="section-kicker">La collection</div>
+          <h2>Les autres Cahiers</h2>
+          <p>Des textes pour regarder autrement les politiques publiques, les territoires, le vivant et les futurs possibles.</p>
         </div>
-        <div className="issues-grid">
-          {archiveNumeros.map((item) => <IssueCard key={item.numero} item={item} />)}
+        <div className="archive-list">
+          {otherIssues.map((item) => (
+            <Link href={`/numeros/${item.slug}`} className="archive-row" key={item.numero}>
+              <span className="archive-number">N°{item.numero}</span>
+              <span className="archive-title">{item.title}</span>
+              <span className="archive-theme">{item.theme}</span>
+              <span className="archive-arrow">→</span>
+            </Link>
+          ))}
         </div>
       </section>
 
-      <section id="a-propos" className="about-section">
+      <section className="home-signals">
+        <div>
+          <div className="section-kicker">Veille prospective</div>
+          <h2>Les Signaux</h2>
+        </div>
+        <div className="home-signal-list">
+          <Link href="/signaux"><span>Signal 001 · Territoires</span>Quand la chaleur commence à modifier les horaires de la ville.</Link>
+          <Link href="/signaux"><span>Signal 002 · État</span>Quand un nouveau vocabulaire précède une nouvelle politique publique.</Link>
+          <Link href="/signaux"><span>Signal 003 · Impact</span>Quand l’entretien devient plus stratégique que l’inauguration.</Link>
+        </div>
+        <Link className="text-link" href="/signaux">Lire les Signaux →</Link>
+      </section>
+
+      <section id="a-propos" className="home-manifesto">
         <div className="section-kicker">À propos</div>
-        <h2>Une revue pour penser les transformations avant qu’elles ne deviennent évidentes.</h2>
-        <p>Zaouia explore les idées, les territoires, les politiques publiques, les signaux faibles et les formes nouvelles de l’impact. Elle s’intéresse aussi à ce qui demeure hors champ, aux zones d’ombre, aux dynamiques invisibles et aux transformations discrètes qui précèdent souvent les basculements visibles. Le site prolonge la newsletter LinkedIn en constituant progressivement une archive éditoriale indépendante.</p>
-        <p><strong>Zaouia est conçue et écrite par Shanez Kechroud Beghdadi, autrice et directrice éditoriale de la revue.</strong></p>
+        <p>Zaouia observe ce qui se transforme, mais aussi ce qui demeure hors champ : les zones d’ombre, les dynamiques invisibles et les signaux qui précèdent parfois les basculements visibles.</p>
+        <Link className="text-link" href="/manifeste">Lire le manifeste →</Link>
       </section>
 
       <footer>
