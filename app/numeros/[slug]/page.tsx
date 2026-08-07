@@ -45,6 +45,8 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
   const index = ordered.findIndex((numero) => numero.numero === item.numero);
   const previous = index > 0 ? ordered[index - 1] : null;
   const next = index < ordered.length - 1 ? ordered[index + 1] : null;
+  const issueUrl = `${siteUrl}/numeros/${item.slug}`;
+  const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(issueUrl)}`;
 
   return (
     <main>
@@ -70,6 +72,13 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
           <div className="section-kicker">Autrice</div>
           <strong>Shanez Kechroud Beghdadi</strong>
           <span>Autrice & directrice éditoriale de Zaouia</span>
+        </div>
+
+        <div className="article-share">
+          <span>Ce Cahier mérite d’être prolongé ?</span>
+          <a href={linkedInShareUrl} target="_blank" rel="noopener noreferrer" className="linkedin-share-button" aria-label={`Partager le numéro ${item.numero} de Zaouia sur LinkedIn`}>
+            Partager ce Cahier sur LinkedIn ↗
+          </a>
         </div>
 
         <nav className="issue-navigation" aria-label="Navigation entre les numéros">
