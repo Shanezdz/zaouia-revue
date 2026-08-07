@@ -57,6 +57,7 @@ export default function Home() {
         <div className="footer-brand">
           <strong>ZAOUIA</strong>
           <span>Architectures de l’impact</span>
+          <a href="https://shanezkechroud.org" target="_blank" rel="noopener noreferrer">shanezkechroud.org ↗</a>
         </div>
         <p>Zaouia explore les idées, les territoires, les politiques publiques, les signaux faibles et les formes nouvelles de l’impact. Elle s’intéresse aussi à ce qui demeure hors champ, aux zones d’ombre et aux transformations discrètes qui échappent encore au regard. Le site prolonge la newsletter LinkedIn en constituant progressivement une archive éditoriale indépendante.</p>
       </footer>
