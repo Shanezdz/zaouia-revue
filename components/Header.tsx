@@ -7,7 +7,13 @@ export default function Header() {
       <nav>
         <Link href="/#numeros">Numéros</Link>
         <Link href="/#a-propos">À propos</Link>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7490452004490711040"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          S’abonner sur LinkedIn
+        </a>
       </nav>
     </header>
   );
