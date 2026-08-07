@@ -5,10 +5,10 @@ import type { Numero } from "@/data/numeros";
 export default function IssueCard({ item }: { item: Numero }) {
   return (
     <article className="issue-card">
+      <div className="issue-meta issue-meta-above">N°{item.numero} · {item.theme}</div>
       <Link href={`/numeros/${item.slug}`} className="issue-image-wrap">
         <Image src={item.image} alt={`Zaouia numéro ${item.numero}`} width={900} height={1200} className="issue-image" />
       </Link>
-      <div className="issue-meta">N°{item.numero} · {item.theme}</div>
       <h3><Link href={`/numeros/${item.slug}`}>{item.title}</Link></h3>
       <p>{item.subtitle}</p>
     </article>
