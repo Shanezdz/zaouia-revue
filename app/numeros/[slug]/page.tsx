@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${item.title} | Zaouia N°${item.numero}`,
     description: item.subtitle,
+    keywords: item.keywords,
     alternates: { canonical: url },
     openGraph: {
       title: `${item.title} — Zaouia N°${item.numero}`,
@@ -61,6 +62,12 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
           <p>{item.subtitle}</p>
           <div className="article-theme">{item.theme}</div>
           <div className="reading-time">Temps de lecture · {readingTimes[item.numero] ?? 10} min</div>
+          <div style={{ marginTop: 18 }}>
+            <div className="section-kicker" style={{ marginBottom: 9 }}>Mots clés</div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "7px 12px", color: "#6c746f", fontSize: ".88rem", lineHeight: 1.5 }}>
+              {item.keywords.map((keyword, i) => <span key={keyword}>{keyword}{i < item.keywords.length - 1 ? " ·" : ""}</span>)}
+            </div>
+          </div>
           <Link href="/#numeros" className="text-link">← Retour aux numéros</Link>
         </div>
       </section>
@@ -75,19 +82,8 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
         </div>
 
         <div style={{ maxWidth: 820, margin: "34px auto 0", padding: "28px 0 34px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap", borderBottom: "1px solid rgba(23,63,50,.16)" }}>
-          <div>
-            <div className="section-kicker" style={{ marginBottom: 8 }}>Partager</div>
-            <div style={{ color: "#6c746f", fontSize: ".95rem" }}>Prolonger la réflexion auprès de votre réseau.</div>
-          </div>
-          <a
-            href={linkedInShareUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Partager le numéro ${item.numero} de Zaouia sur LinkedIn`}
-            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", minHeight: 46, padding: "12px 20px", border: "1px solid #173f32", borderRadius: 999, color: "#173f32", fontSize: ".88rem", fontWeight: 600, letterSpacing: ".02em", whiteSpace: "nowrap" }}
-          >
-            Partager sur LinkedIn ↗
-          </a>
+          <div><div className="section-kicker" style={{ marginBottom: 8 }}>Partager</div><div style={{ color: "#6c746f", fontSize: ".95rem" }}>Prolonger la réflexion auprès de votre réseau.</div></div>
+          <a href={linkedInShareUrl} target="_blank" rel="noopener noreferrer" aria-label={`Partager le numéro ${item.numero} de Zaouia sur LinkedIn`} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", minHeight: 46, padding: "12px 20px", border: "1px solid #173f32", borderRadius: 999, color: "#173f32", fontSize: ".88rem", fontWeight: 600, letterSpacing: ".02em", whiteSpace: "nowrap" }}>Partager sur LinkedIn ↗</a>
         </div>
 
         <nav className="issue-navigation" aria-label="Navigation entre les numéros">
