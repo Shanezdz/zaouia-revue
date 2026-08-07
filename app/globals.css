@@ -136,15 +136,18 @@ img { display: block; max-width: 100%; }
 .article-body { border-top: 1px solid rgba(23, 63, 50, .16); }
 .article-note { max-width: 800px; margin: 0 auto; font-family: Georgia, 'Times New Roman', serif; font-size: 1.35rem; line-height: 1.75; color: var(--muted); }
 
-.longform-article {
+.longform-article,
+.longform {
   max-width: 820px;
   margin: 0 auto;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.2rem;
   line-height: 1.85;
 }
-.longform-article p { margin: 0 0 1.6em; }
-.longform-article h2 {
+.longform-article p,
+.longform p { margin: 0 0 1.6em; }
+.longform-article h2,
+.longform h2 {
   margin: 2.6em 0 .9em;
   color: var(--green-deep);
   font-family: Georgia, 'Times New Roman', serif;
@@ -152,7 +155,8 @@ img { display: block; max-width: 100%; }
   font-weight: 400;
   line-height: 1.1;
 }
-.longform-article blockquote {
+.longform-article blockquote,
+.longform blockquote {
   margin: 2.5em 0;
   padding: 1.1em 0 1.1em 1.4em;
   border-left: 2px solid var(--sand);
@@ -161,8 +165,21 @@ img { display: block; max-width: 100%; }
   line-height: 1.35;
   font-style: italic;
 }
-.longform-article ul { margin: 1.4em 0 2.2em; padding-left: 1.4em; }
-.longform-article li { margin-bottom: 1.1em; }
+.longform-article ul,
+.longform ul { margin: 1.4em 0 2.2em; padding-left: 1.4em; }
+.longform-article li,
+.longform li { margin-bottom: 1.1em; }
+.longform .article-lead {
+  font-size: 1.35rem;
+  color: var(--green-deep);
+}
+.longform .article-signature {
+  margin-top: 3.5em;
+  padding-top: 2em;
+  border-top: 1px solid rgba(23, 63, 50, .16);
+  color: var(--muted);
+  font-size: 1rem;
+}
 .article-closing {
   margin-top: 3.5em !important;
   padding-top: 2em;
@@ -198,6 +215,7 @@ footer {
   .article-hero,
   .section-heading { grid-template-columns: 1fr; }
   .issues-grid { grid-template-columns: 1fr; }
-  .longform-article { font-size: 1.08rem; line-height: 1.8; }
+  .longform-article,
+  .longform { font-size: 1.08rem; line-height: 1.8; }
   footer { flex-direction: column; gap: 8px; }
 }
