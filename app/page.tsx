@@ -15,7 +15,7 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">Architectures de l’impact</div>
           <h1>Zaouia</h1>
-          <p className="hero-lead">Éclairer les transformations qui s’esquissent.</p>
+          <p className="hero-lead">Lire le présent depuis ses lisières.</p>
           <div className="hero-themes">Idées · Territoires · Vivant · Générations futures</div>
         </div>
         <div className="hero-art" aria-hidden="true"><span /></div>
@@ -44,7 +44,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <div className="section-kicker">La collection</div>
-            <h2>Les Cahiers de Zaouia</h2>
+            <h2>Les Numéros de Zaouia</h2>
           </div>
           <p>Une collection de textes pour regarder autrement les politiques publiques, les territoires, le vivant et les futurs possibles, tout en interrogeant le legs que nous choisissons de transmettre aux générations futures.</p>
         </div>
