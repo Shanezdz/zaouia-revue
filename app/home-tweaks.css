@@ -1,0 +1,2 @@
+.latest-grid{grid-template-columns:minmax(300px,1fr) 1fr}.latest>.section-kicker{width:calc((100% - 7vw)/2)}
+@media(max-width:820px){.latest-grid{grid-template-columns:1fr}.latest>.section-kicker{width:100%}}
