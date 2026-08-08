@@ -9,8 +9,8 @@ export default function Header() {
         <span>ZAOUIA</span>
       </Link>
       <nav>
-        <Link href="/#numeros">Cahiers</Link>
-        <Link href="/signaux">Signaux</Link>
+        <Link href="/#numeros">Numéros</Link>
+        <Link href="/signaux">Regards</Link>
         <Link href="/manifeste">Manifeste</Link>
         <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7490452004490711040" target="_blank" rel="noopener noreferrer">S’abonner</a>
       </nav>
