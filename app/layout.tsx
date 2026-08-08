@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./home-tweaks.css";
 
 export const metadata: Metadata = {
   title: "Zaouia — Architectures de l’impact",
