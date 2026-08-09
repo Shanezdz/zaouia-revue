@@ -14,7 +14,7 @@ export const numeros: Numero[] = [
     slug: "ce-que-nous-ne-comptons-pas",
     title: "Ce que nous ne comptons pas n’existe pas",
     subtitle: "De la mesure des choses à la mesure de ce qui compte",
-    image: "/images/numero-5.svg",
+    image: "/images/numero-5.png",
     theme: "Politiques publiques · Mesure",
     keywords: ["Idées", "Mesure", "Indicateurs", "Politiques publiques", "Gouvernance", "PIB", "Territoires", "Algérie", "Vivant", "Générations futures", "Responsabilité"],
   },
