@@ -10,6 +10,15 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 7,
+    slug: "ce-que-la-vitesse-nous-empeche-de-voir",
+    title: "Ce que la vitesse nous empêche de voir",
+    subtitle: "Ralentir n’est peut-être pas aller moins vite. C’est retrouver la capacité de regarder.",
+    image: "/images/numero-7.png",
+    theme: "Temps · Attention · Territoires",
+    keywords: ["Temps", "Attention", "Lenteur", "Observation", "Territoires", "Gouvernance", "Vivant", "Transmission", "Générations futures", "Responsabilité"],
+  },
+  {
     numero: 6,
     slug: "monde-concu-pour-l-abondance",
     title: "Nous avons hérité d’un monde conçu pour l’abondance",
