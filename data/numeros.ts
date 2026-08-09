@@ -14,7 +14,7 @@ export const numeros: Numero[] = [
     slug: "monde-concu-pour-l-abondance",
     title: "Nous avons hérité d’un monde conçu pour l’abondance",
     subtitle: "Et si la question n’était plus de produire davantage, mais d’apprendre à habiter les limites ?",
-    image: "/images/numero-6.svg",
+    image: "/images/numero-6.png",
     theme: "Idées · Limites · Ressources",
     keywords: ["Idées", "Limites", "Ressources", "Gouvernance", "Sobriété", "Résilience", "Algérie", "Territoires", "Vivant", "Générations futures", "Responsabilité"],
   },
