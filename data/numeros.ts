@@ -10,6 +10,15 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 5,
+    slug: "ce-que-nous-ne-comptons-pas",
+    title: "Ce que nous ne comptons pas n’existe pas",
+    subtitle: "De la mesure des choses à la mesure de ce qui compte",
+    image: "/images/numero-5.svg",
+    theme: "Politiques publiques · Mesure",
+    keywords: ["Idées", "Mesure", "Indicateurs", "Politiques publiques", "Gouvernance", "PIB", "Territoires", "Algérie", "Vivant", "Générations futures", "Responsabilité"],
+  },
+  {
     numero: 4,
     slug: "ombre-infrastructure",
     title: "L’ombre est une infrastructure",
