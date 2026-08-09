@@ -10,6 +10,15 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 8,
+    slug: "une-institution-ressemble-a-ce-qu-elle-decide-de-ne-pas-voir",
+    title: "Une institution ressemble toujours un peu à ce qu’elle décide de ne pas voir",
+    subtitle: "Gouverner, c’est aussi faire entrer les absents dans la décision.",
+    image: "/images/numero-8.png",
+    theme: "Gouvernance · Responsabilité · Institutions",
+    keywords: ["Gouvernance", "Responsabilité", "Institutions", "Parties prenantes", "Décision", "Territoires", "Algérie", "RSO", "Générations futures", "Vivant"],
+  },
+  {
     numero: 7,
     slug: "ce-que-la-vitesse-nous-empeche-de-voir",
     title: "Ce que la vitesse nous empêche de voir",
