@@ -22,7 +22,7 @@ Nous savons mesurer la surface d’un espace public. Nous savons moins bien dire
 
 Or une ville ne devient pas habitable seulement par ce qu’elle construit.
 
-Elle le devient aussi par ce dont elle protège les corps.
+Elle le devient aussi par les conditions qu’elle crée pour protéger le vivant.
 
 ### Lorsque la chaleur révèle la ville
 
@@ -266,7 +266,7 @@ Une démarche de responsabilité sociétale peut intégrer la chaleur dans l’�
 
 Planter quelques arbres à l’occasion d’une campagne environnementale ne suffit pas lorsque les salariés, les prestataires, les usagers ou les riverains continuent d’attendre sous le soleil.
 
-La responsabilité commence lorsque l’organisation examine les conditions concrètes qu’elle impose aux corps.
+La responsabilité commence lorsque l’organisation examine les conditions concrètes qu’elle impose au vivant, à commencer par celles et ceux qui travaillent, attendent, circulent ou habitent ses espaces.
 
 À quelles heures organise t elle le travail extérieur ?
 
@@ -334,7 +334,7 @@ Elle devra devenir son critère premier.
 
 La ville de demain ne sera pas seulement celle qui construira davantage.
 
-Elle sera celle qui saura organiser la fraîcheur, préserver les sols, faire grandir ses arbres, protéger ses parcours et offrir à chacun des lieux où le corps puisse ralentir sans se mettre en danger. Les travaux récents d’ONU Habitat consacrés à la gestion de la chaleur urbaine considèrent d’ailleurs l’ombrage des espaces publics comme une approche passive essentielle pour réduire l’exposition à la chaleur, particulièrement dans les villes du Sud global.
+Elle sera celle qui saura organiser la fraîcheur, préserver les sols, faire grandir ses arbres, protéger ses parcours et ménager des espaces où le vivant puisse respirer, circuler et ralentir. Les travaux récents d’ONU Habitat consacrés à la gestion de la chaleur urbaine considèrent d’ailleurs l’ombrage des espaces publics comme une approche passive essentielle pour réduire l’exposition à la chaleur, particulièrement dans les villes du Sud global.
 
 Peut-être faudra t il alors ajouter une nouvelle carte aux plans de nos villes.
 
@@ -344,9 +344,9 @@ Mais celle de ce qui protège.
 
 Car l’ombre n’est pas ce qui reste lorsque la lumière disparaît.
 
-Elle est ce qu’une société décide d’interposer entre la violence du climat et la fragilité des corps.
+Elle est ce qu’une société décide d’interposer entre la violence du climat et la vulnérabilité du vivant.
 
-**Une ville ne devient pas habitable seulement par ce qu’elle construit, mais par ce dont elle protège les corps.**
+**Une ville ne devient pas habitable seulement par ce qu’elle construit, mais par les conditions qu’elle crée pour le vivant.**
 
 *Ce texte a été conçu et rédigé avec l’assistance de l’intelligence artificielle.*`;
 
