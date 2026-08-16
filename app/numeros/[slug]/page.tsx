@@ -11,10 +11,11 @@ import Numero5Article from "@/components/Numero5Article";
 import Numero6Article from "@/components/Numero6Article";
 import Numero7Article from "@/components/Numero7Article";
 import Numero8Article from "@/components/Numero8Article";
+import Numero9Article from "@/components/Numero9Article";
 import { numeros } from "@/data/numeros";
 
 const siteUrl = "https://zaouia-revue-pyvl.vercel.app";
-const readingTimes: Record<number, number> = { 1: 7, 2: 11, 3: 12, 4: 12, 5: 10, 6: 13, 7: 12, 8: 12 };
+const readingTimes: Record<number, number> = { 1: 7, 2: 11, 3: 12, 4: 12, 5: 10, 6: 13, 7: 12, 8: 12, 9: 7 };
 
 export function generateStaticParams() {
   return numeros.map((item) => ({ slug: item.slug }));
@@ -58,7 +59,14 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       <Header />
       <section className="article-hero">
         <div className="article-cover">
-          <Image src={item.image} alt={`Couverture Zaouia numéro ${item.numero}`} width={1000} height={1300} className="latest-image" priority />
+          <Image
+            src={item.image}
+            alt={`Couverture Zaouia numéro ${item.numero}`}
+            width={item.imageWidth ?? 1000}
+            height={item.imageHeight ?? 1300}
+            className="latest-image"
+            priority
+          />
         </div>
         <div className="article-intro">
           <div className="section-kicker">Zaouia — N°{item.numero}</div>
@@ -77,7 +85,7 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       </section>
 
       <section className="article-body">
-        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 3 ? <Numero3Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : null}
+        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 3 ? <Numero3Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : null}
 
         <div className="author-signature">
           <div className="section-kicker">Autrice</div>

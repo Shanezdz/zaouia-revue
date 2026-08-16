@@ -4,11 +4,24 @@ export type Numero = {
   title: string;
   subtitle: string;
   image: string;
+  imageWidth?: number;
+  imageHeight?: number;
   theme: string;
   keywords: string[];
 };
 
 export const numeros: Numero[] = [
+  {
+    numero: 9,
+    slug: "ce-que-le-monde-nous-fait-entendre",
+    title: "Ce que le monde nous fait entendre",
+    subtitle: "Nos paysages sonores révèlent ce que nos sociétés produisent, tolèrent et parfois imposent.",
+    image: "/images/numero-9.webp",
+    imageWidth: 500,
+    imageHeight: 281,
+    theme: "Son · Territoires · Vivant · Gouvernance",
+    keywords: ["Son", "Paysage sonore", "Attention", "Santé", "Territoires", "Patrimoine", "Gouvernance", "Algérie"],
+  },
   {
     numero: 8,
     slug: "une-institution-ressemble-a-ce-qu-elle-decide-de-ne-pas-voir",

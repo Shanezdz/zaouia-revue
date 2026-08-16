@@ -4,7 +4,7 @@ import IssueCard from "@/components/IssueCard";
 import { numeros } from "@/data/numeros";
 
 export default function Home() {
-  const archiveNumeros = [...numeros].sort((a, b) => a.numero - b.numero);
+  const archiveNumeros = [...numeros].sort((a, b) => b.numero - a.numero);
   const first = archiveNumeros[0];
   const followingNumeros = archiveNumeros.slice(1);
 
@@ -31,7 +31,13 @@ export default function Home() {
       <section className="latest">
         <div className="section-kicker">N°{first.numero} · {first.theme}</div>
         <div className="latest-grid">
-          <Image src={first.image} alt={`Couverture Zaouia numéro ${first.numero}`} width={1000} height={1300} className="latest-image" />
+          <Image
+            src={first.image}
+            alt={`Couverture Zaouia numéro ${first.numero}`}
+            width={first.imageWidth ?? 1000}
+            height={first.imageHeight ?? 1300}
+            className="latest-image"
+          />
           <div className="latest-copy">
             <h2>{first.title}</h2>
             <p>{first.subtitle}</p>
