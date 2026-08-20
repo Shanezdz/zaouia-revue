@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 11,
+    slug: "le-travail-que-l-organisation-ne-voit-plus",
+    title: "Le travail que l’organisation ne voit plus",
+    subtitle: "Peut on externaliser une fonction sans externaliser la responsabilité ?",
+    image: "/images/numero-11.webp",
+    imageWidth: 1200,
+    imageHeight: 675,
+    theme: "Travail · Organisation · Relations et conditions de travail",
+    keywords: ["Travail", "Organisation", "RSO", "Sous traitance", "Intérim", "Prestataires", "Conditions de travail", "Responsabilité", "BTP", "Algérie"],
+  },
+  {
     numero: 9,
     slug: "ce-que-le-monde-nous-fait-entendre",
     title: "Ce que le monde nous fait entendre",
