@@ -13,10 +13,11 @@ import Numero8Article from "@/components/Numero7Article";
 import Numero9Article from "@/components/Numero8Article";
 import Numero10Article from "@/components/Numero9Article";
 import Numero11Article from "@/components/Numero11Article";
+import Numero12Article from "@/components/Numero12Article";
 import { numeros } from "@/data/numeros";
 
 const siteUrl = "https://zaouia-revue-pyvl.vercel.app";
-const readingTimes: Record<number, number> = { 1: 7, 2: 11, 4: 12, 5: 12, 6: 10, 7: 13, 8: 12, 9: 12, 10: 7, 11: 16 };
+const readingTimes: Record<number, number> = { 1: 7, 2: 11, 4: 12, 5: 12, 6: 10, 7: 13, 8: 12, 9: 12, 10: 7, 11: 16, 12: 15 };
 
 export function generateStaticParams() {
   return numeros.map((item) => ({ slug: item.slug }));
@@ -86,7 +87,7 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       </section>
 
       <section className="article-body">
-        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : item.numero === 10 ? <Numero10Article /> : item.numero === 11 ? <Numero11Article /> : null}
+        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : item.numero === 10 ? <Numero10Article /> : item.numero === 11 ? <Numero11Article /> : item.numero === 12 ? <Numero12Article /> : null}
 
         <div className="author-signature">
           <div className="section-kicker">Autrice</div>
