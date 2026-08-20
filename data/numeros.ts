@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 12,
+    slug: "et-si-l-eau-avait-une-voix",
+    title: "Et si l’eau avait une voix ?",
+    subtitle: "Représenter dans la décision ce qui subit nos choix sans pouvoir les contester.",
+    image: "/images/numero-12.webp",
+    imageWidth: 640,
+    imageHeight: 360,
+    theme: "Vivant · Générations futures · Environnement",
+    keywords: ["Eau", "Vivant", "Générations futures", "Environnement", "Gouvernance", "Nappes phréatiques", "Stress hydrique", "Salinisation", "Territoires", "Algérie"],
+  },
+  {
     numero: 11,
     slug: "le-travail-que-l-organisation-ne-voit-plus",
     title: "Le travail que l’organisation ne voit plus",
