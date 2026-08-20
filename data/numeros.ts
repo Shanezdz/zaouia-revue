@@ -23,7 +23,7 @@ export const numeros: Numero[] = [
     keywords: ["Travail", "Organisation", "RSO", "Sous traitance", "Intérim", "Prestataires", "Conditions de travail", "Responsabilité", "BTP", "Algérie"],
   },
   {
-    numero: 9,
+    numero: 10,
     slug: "ce-que-le-monde-nous-fait-entendre",
     title: "Ce que le monde nous fait entendre",
     subtitle: "Nos paysages sonores révèlent ce que nos sociétés produisent, tolèrent et parfois imposent.",
@@ -34,7 +34,7 @@ export const numeros: Numero[] = [
     keywords: ["Son", "Paysage sonore", "Attention", "Santé", "Territoires", "Patrimoine", "Gouvernance", "Algérie"],
   },
   {
-    numero: 8,
+    numero: 9,
     slug: "une-institution-ressemble-a-ce-qu-elle-decide-de-ne-pas-voir",
     title: "Une institution ressemble toujours un peu à ce qu’elle décide de ne pas voir",
     subtitle: "Gouverner, c’est aussi faire entrer les absents dans la décision.",
@@ -43,7 +43,7 @@ export const numeros: Numero[] = [
     keywords: ["Gouvernance", "Responsabilité", "Institutions", "Parties prenantes", "Décision", "Territoires", "Algérie", "RSO", "Générations futures", "Vivant"],
   },
   {
-    numero: 7,
+    numero: 8,
     slug: "ce-que-la-vitesse-nous-empeche-de-voir",
     title: "Ce que la vitesse nous empêche de voir",
     subtitle: "Ralentir n’est peut-être pas aller moins vite. C’est retrouver la capacité de regarder.",
@@ -52,7 +52,7 @@ export const numeros: Numero[] = [
     keywords: ["Temps", "Attention", "Lenteur", "Observation", "Territoires", "Gouvernance", "Vivant", "Transmission", "Générations futures", "Responsabilité"],
   },
   {
-    numero: 6,
+    numero: 7,
     slug: "monde-concu-pour-l-abondance",
     title: "Nous avons hérité d’un monde conçu pour l’abondance",
     subtitle: "Et si la question n’était plus de produire davantage, mais d’apprendre à habiter les limites ?",
@@ -61,7 +61,7 @@ export const numeros: Numero[] = [
     keywords: ["Idées", "Limites", "Ressources", "Gouvernance", "Sobriété", "Résilience", "Algérie", "Territoires", "Vivant", "Générations futures", "Responsabilité"],
   },
   {
-    numero: 5,
+    numero: 6,
     slug: "ce-que-nous-ne-comptons-pas",
     title: "Ce que nous ne comptons pas n’existe pas",
     subtitle: "De la mesure des choses à la mesure de ce qui compte",
@@ -70,7 +70,7 @@ export const numeros: Numero[] = [
     keywords: ["Idées", "Mesure", "Indicateurs", "Politiques publiques", "Gouvernance", "PIB", "Territoires", "Algérie", "Vivant", "Générations futures", "Responsabilité"],
   },
   {
-    numero: 4,
+    numero: 5,
     slug: "ombre-infrastructure",
     title: "L’ombre est une infrastructure",
     subtitle: "Ce que la ville protège lorsqu’elle choisit où le soleil s’arrête.",
@@ -79,7 +79,7 @@ export const numeros: Numero[] = [
     keywords: ["Ville", "Ombre", "Chaleur", "Adaptation climatique", "Vivant", "Générations futures", "Responsabilité"],
   },
   {
-    numero: 3,
+    numero: 4,
     slug: "transformations-qui-s-esquissent-3",
     title: "Ce qui change avant que nous le voyions",
     subtitle: "Lire les signaux faibles d’un monde qui ne se transforme pas à la même vitesse partout.",
