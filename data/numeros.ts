@@ -23,6 +23,17 @@ export const numeros: Numero[] = [
     keywords: ["Dignité", "Inclusion", "Droits humains", "Vulnérabilité", "Accessibilité", "Handicap", "Personnes âgées", "Services publics", "Territoires", "Algérie"],
   },
   {
+    numero: 15,
+    slug: "un-territoire-n-est-pas-un-beneficiaire",
+    title: "Un territoire n’est pas un bénéficiaire",
+    subtitle: "Passer de l’intervention territoriale à la responsabilité partagée.",
+    image: "/images/numero-15.png",
+    imageWidth: 1640,
+    imageHeight: 920,
+    theme: "Territoires · Co-construction · Communautés et développement local",
+    keywords: ["Territoires", "Co-construction", "Communes", "Wilayas", "Participation locale", "Gouvernance locale", "Décentralisation", "Développement local", "Responsabilité partagée", "Algérie"],
+  },
+  {
     numero: 14,
     slug: "le-consentement-n-est-pas-une-case-a-cocher",
     title: "Le consentement n’est pas une case à cocher",
