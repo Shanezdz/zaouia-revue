@@ -27,7 +27,7 @@ export const numeros: Numero[] = [
     slug: "le-consentement-n-est-pas-une-case-a-cocher",
     title: "Le consentement n’est pas une case à cocher",
     subtitle: "Informer ne suffit pas. Consentir suppose de comprendre ce qui est demandé et de pouvoir réellement choisir autrement.",
-    image: "/images/numero-14.webp",
+    image: "/images/numero-14.png",
     imageWidth: 1200,
     imageHeight: 675,
     theme: "Numérique · Usages · Consommateurs",
