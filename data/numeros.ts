@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 13,
+    slug: "ce-que-coute-une-confiance-perdue",
+    title: "Ce que coûte une confiance perdue",
+    subtitle: "La loyauté comme infrastructure économique et institutionnelle.",
+    image: "/images/numero-13.webp",
+    imageWidth: 960,
+    imageHeight: 540,
+    theme: "Institutions · Confiance · Loyauté des pratiques",
+    keywords: ["Institutions", "Confiance", "Loyauté des pratiques", "Gouvernance", "Service public", "Citoyens", "Responsabilité", "Marques", "Algérie"],
+  },
+  {
     numero: 12,
     slug: "et-si-l-eau-avait-une-voix",
     title: "Et si l’eau avait une voix ?",
