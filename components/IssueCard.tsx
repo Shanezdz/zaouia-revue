@@ -2,12 +2,14 @@ import Link from "next/link";
 import type { Numero } from "@/data/numeros";
 
 export default function IssueCard({ item }: { item: Numero }) {
+  const imageSrc = item.numero === 13 ? "/images/numero-13-fallback.svg" : item.image;
+
   return (
     <article className="issue-card">
       <div className="issue-meta issue-meta-above">N°{item.numero} · {item.theme}</div>
       <Link href={`/numeros/${item.slug}`} className="issue-image-wrap">
         <img
-          src={item.image}
+          src={imageSrc}
           alt={`Zaouia numéro ${item.numero}`}
           width={item.imageWidth ?? 900}
           height={item.imageHeight ?? 1200}

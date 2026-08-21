@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "@/components/Header";
 import IssueCard from "@/components/IssueCard";
 import { numeros } from "@/data/numeros";
@@ -31,12 +30,13 @@ export default function Home() {
       <section className="latest">
         <div className="section-kicker">N°{first.numero} · {first.theme}</div>
         <div className="latest-grid">
-          <Image
+          <img
             src={first.image}
             alt={`Couverture Zaouia numéro ${first.numero}`}
             width={first.imageWidth ?? 1000}
             height={first.imageHeight ?? 1300}
             className="latest-image"
+            decoding="async"
           />
           <div className="latest-copy">
             <h2>{first.title}</h2>
