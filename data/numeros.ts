@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 14,
+    slug: "le-consentement-n-est-pas-une-case-a-cocher",
+    title: "Le consentement n’est pas une case à cocher",
+    subtitle: "Informer ne suffit pas. Consentir suppose de comprendre ce qui est demandé et de pouvoir réellement choisir autrement.",
+    image: "/images/numero-14.webp",
+    imageWidth: 1200,
+    imageHeight: 675,
+    theme: "Numérique · Usages · Consommateurs",
+    keywords: ["Numérique", "Consentement", "Usages", "Consommateurs", "Données personnelles", "Vie privée", "Interfaces", "ANPDP", "Gouvernance", "Algérie"],
+  },
+  {
     numero: 13,
     slug: "ce-que-coute-une-confiance-perdue",
     title: "Ce que coûte une confiance perdue",
