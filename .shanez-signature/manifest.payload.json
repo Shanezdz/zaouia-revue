@@ -1,0 +1,15 @@
+{
+  "project": "zaouia-revue",
+  "repository": "Shanezdz/zaouia-revue",
+  "branch": "main",
+  "commit": "9d31a3bab8aa07571a19d7070f511da25f7504c5",
+  "commitMessage": "Ajoute Zaouia N°9",
+  "attestedBy": {
+    "signerId": "SK-ID-2026-04209EFE",
+    "fullName": "Shanez Kechroud",
+    "publicKeyFingerprint": "59db7a139c2fb49f06c37b3a1a01252658f2a9cd3ef78306ae28d6b25bcb1ea2",
+    "signatureAlgorithm": "Ed25519"
+  },
+  "timestamp": "2026-08-20T11:04:53.000Z",
+  "version": "1.0.0"
+}
