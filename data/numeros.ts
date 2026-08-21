@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 16,
+    slug: "la-vulnerabilite-n-est-pas-une-marge",
+    title: "La vulnérabilité n’est pas une marge",
+    subtitle: "Concevoir à partir de ceux que les systèmes servent le moins bien.",
+    image: "/images/numero-16.webp",
+    imageWidth: 640,
+    imageHeight: 360,
+    theme: "Dignité · Inclusion · Droits humains",
+    keywords: ["Dignité", "Inclusion", "Droits humains", "Vulnérabilité", "Accessibilité", "Handicap", "Personnes âgées", "Services publics", "Territoires", "Algérie"],
+  },
+  {
     numero: 14,
     slug: "le-consentement-n-est-pas-une-case-a-cocher",
     title: "Le consentement n’est pas une case à cocher",
