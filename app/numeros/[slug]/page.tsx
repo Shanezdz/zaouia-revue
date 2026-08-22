@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
@@ -65,13 +64,14 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       <Header />
       <section className="article-hero">
         <div className="article-cover">
-          <Image
+          <img
             src={item.image}
             alt={`Couverture Zaouia numéro ${item.numero}`}
             width={item.imageWidth ?? 1000}
             height={item.imageHeight ?? 1300}
             className="latest-image"
-            priority
+            loading="eager"
+            decoding="async"
           />
         </div>
         <div className="article-intro">
