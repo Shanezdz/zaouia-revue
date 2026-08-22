@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 19,
+    slug: "la-responsabilite-commence-avant-l-achat",
+    title: "La responsabilité commence avant l’achat",
+    subtitle: "Ce que nous achetons raconte une histoire.",
+    image: "/images/numero-19.png",
+    imageWidth: 1672,
+    imageHeight: 941,
+    theme: "Économie · Relations · Loyauté des pratiques · Travail",
+    keywords: ["Achats", "Chaîne de valeur", "Fournisseurs", "Sous-traitance", "Loyauté des pratiques", "Travail", "Filières agricoles", "Importations", "Algérie"],
+  },
+  {
     numero: 18,
     slug: "l-intelligence-artificielle-a-une-empreinte",
     title: "L’intelligence artificielle a une empreinte",
