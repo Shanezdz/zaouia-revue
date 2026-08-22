@@ -23,10 +23,11 @@ import Numero19Article from "@/components/Numero19Article";
 import Numero20Article from "@/components/Numero20Article";
 import Numero21Article from "@/components/Numero21Article";
 import Numero22Article from "@/components/Numero22Article";
+import Numero23Article from "@/components/Numero23Article";
 import { numeros } from "@/data/numeros";
 
 const siteUrl = "https://zaouia-revue-pyvl.vercel.app";
-const readingTimes: Record<number, number> = { 1: 7, 2: 11, 4: 12, 5: 12, 6: 10, 7: 13, 8: 12, 9: 12, 10: 7, 11: 16, 12: 15, 13: 17, 14: 17, 15: 14, 16: 17, 17: 16, 18: 14, 19: 15, 20: 15, 21: 14, 22: 15 };
+const readingTimes: Record<number, number> = { 1: 7, 2: 11, 4: 12, 5: 12, 6: 10, 7: 13, 8: 12, 9: 12, 10: 7, 11: 16, 12: 15, 13: 17, 14: 17, 15: 14, 16: 17, 17: 16, 18: 14, 19: 15, 20: 15, 21: 14, 22: 15, 23: 15 };
 
 export function generateStaticParams() {
   return numeros.map((item) => ({ slug: item.slug }));
@@ -89,7 +90,7 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       </section>
 
       <section className="article-body">
-        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : item.numero === 10 ? <Numero10Article /> : item.numero === 11 ? <Numero11Article /> : item.numero === 12 ? <Numero12Article /> : item.numero === 13 ? <Numero13Article /> : item.numero === 14 ? <Numero14Article /> : item.numero === 15 ? <Numero15Article /> : item.numero === 16 ? <Numero16Article /> : item.numero === 17 ? <Numero17Article /> : item.numero === 18 ? <Numero18Article /> : item.numero === 19 ? <Numero19Article /> : item.numero === 20 ? <Numero20Article /> : item.numero === 21 ? <Numero21Article /> : item.numero === 22 ? <Numero22Article /> : null}
+        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : item.numero === 10 ? <Numero10Article /> : item.numero === 11 ? <Numero11Article /> : item.numero === 12 ? <Numero12Article /> : item.numero === 13 ? <Numero13Article /> : item.numero === 14 ? <Numero14Article /> : item.numero === 15 ? <Numero15Article /> : item.numero === 16 ? <Numero16Article /> : item.numero === 17 ? <Numero17Article /> : item.numero === 18 ? <Numero18Article /> : item.numero === 19 ? <Numero19Article /> : item.numero === 20 ? <Numero20Article /> : item.numero === 21 ? <Numero21Article /> : item.numero === 22 ? <Numero22Article /> : item.numero === 23 ? <Numero23Article /> : null}
 
         <div className="author-signature"><div className="section-kicker">Autrice</div><strong>Shanez Kechroud Beghdadi</strong><span>Autrice & directrice éditoriale de Zaouia</span></div>
         <div style={{ maxWidth: 820, margin: "34px auto 0", padding: "28px 0 34px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap", borderBottom: "1px solid rgba(23,63,50,.16)" }}>
