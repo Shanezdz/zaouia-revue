@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 20,
+    slug: "ce-que-la-chaine-de-valeur-rend-invisible",
+    title: "Ce que la chaîne de valeur rend invisible",
+    subtitle: "Le prix ne paie pas toujours tout ce qu’il mobilise.",
+    image: "/images/numero-20.png",
+    imageWidth: 1672,
+    imageHeight: 941,
+    theme: "Travail · Économie · Droits humains · Loyauté",
+    keywords: ["Travail", "Chaîne de valeur", "Sous-traitance", "Droits humains", "Loyauté", "BTP", "Filières agricoles", "Exportations", "Algérie"],
+  },
+  {
     numero: 19,
     slug: "la-responsabilite-commence-avant-l-achat",
     title: "La responsabilité commence avant l’achat",
