@@ -21,10 +21,11 @@ import Numero17Article from "@/components/Numero17Article";
 import Numero18Article from "@/components/Numero18Article";
 import Numero19Article from "@/components/Numero19Article";
 import Numero20Article from "@/components/Numero20Article";
+import Numero21Article from "@/components/Numero21Article";
 import { numeros } from "@/data/numeros";
 
 const siteUrl = "https://zaouia-revue-pyvl.vercel.app";
-const readingTimes: Record<number, number> = { 1: 7, 2: 11, 4: 12, 5: 12, 6: 10, 7: 13, 8: 12, 9: 12, 10: 7, 11: 16, 12: 15, 13: 17, 14: 17, 15: 14, 16: 17, 17: 16, 18: 14, 19: 15, 20: 15 };
+const readingTimes: Record<number, number> = { 1: 7, 2: 11, 4: 12, 5: 12, 6: 10, 7: 13, 8: 12, 9: 12, 10: 7, 11: 16, 12: 15, 13: 17, 14: 17, 15: 14, 16: 17, 17: 16, 18: 14, 19: 15, 20: 15, 21: 14 };
 
 export function generateStaticParams() {
   return numeros.map((item) => ({ slug: item.slug }));
@@ -68,15 +69,7 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       <Header />
       <section className="article-hero">
         <div className="article-cover">
-          <img
-            src={item.image}
-            alt={`Couverture Zaouia numéro ${item.numero}`}
-            width={item.imageWidth ?? 1000}
-            height={item.imageHeight ?? 1300}
-            className="latest-image"
-            loading="eager"
-            decoding="async"
-          />
+          <img src={item.image} alt={`Couverture Zaouia numéro ${item.numero}`} width={item.imageWidth ?? 1000} height={item.imageHeight ?? 1300} className="latest-image" loading="eager" decoding="async" />
         </div>
         <div className="article-intro">
           <div className="section-kicker">Zaouia — N°{item.numero}</div>
@@ -95,19 +88,13 @@ export default async function NumeroPage({ params }: { params: Promise<{ slug: s
       </section>
 
       <section className="article-body">
-        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : item.numero === 10 ? <Numero10Article /> : item.numero === 11 ? <Numero11Article /> : item.numero === 12 ? <Numero12Article /> : item.numero === 13 ? <Numero13Article /> : item.numero === 14 ? <Numero14Article /> : item.numero === 15 ? <Numero15Article /> : item.numero === 16 ? <Numero16Article /> : item.numero === 17 ? <Numero17Article /> : item.numero === 18 ? <Numero18Article /> : item.numero === 19 ? <Numero19Article /> : item.numero === 20 ? <Numero20Article /> : null}
+        {item.numero === 1 ? <Numero1Article /> : item.numero === 2 ? <Numero2Article /> : item.numero === 4 ? <Numero4Article /> : item.numero === 5 ? <Numero5Article /> : item.numero === 6 ? <Numero6Article /> : item.numero === 7 ? <Numero7Article /> : item.numero === 8 ? <Numero8Article /> : item.numero === 9 ? <Numero9Article /> : item.numero === 10 ? <Numero10Article /> : item.numero === 11 ? <Numero11Article /> : item.numero === 12 ? <Numero12Article /> : item.numero === 13 ? <Numero13Article /> : item.numero === 14 ? <Numero14Article /> : item.numero === 15 ? <Numero15Article /> : item.numero === 16 ? <Numero16Article /> : item.numero === 17 ? <Numero17Article /> : item.numero === 18 ? <Numero18Article /> : item.numero === 19 ? <Numero19Article /> : item.numero === 20 ? <Numero20Article /> : item.numero === 21 ? <Numero21Article /> : null}
 
-        <div className="author-signature">
-          <div className="section-kicker">Autrice</div>
-          <strong>Shanez Kechroud Beghdadi</strong>
-          <span>Autrice & directrice éditoriale de Zaouia</span>
-        </div>
-
+        <div className="author-signature"><div className="section-kicker">Autrice</div><strong>Shanez Kechroud Beghdadi</strong><span>Autrice & directrice éditoriale de Zaouia</span></div>
         <div style={{ maxWidth: 820, margin: "34px auto 0", padding: "28px 0 34px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap", borderBottom: "1px solid rgba(23,63,50,.16)" }}>
           <div><div className="section-kicker" style={{ marginBottom: 8 }}>Partager</div><div style={{ color: "#6c746f", fontSize: ".95rem" }}>Prolonger la réflexion auprès de votre réseau.</div></div>
           <a href={linkedInShareUrl} target="_blank" rel="noopener noreferrer" aria-label={`Partager le numéro ${item.numero} de Zaouia sur LinkedIn`} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", minHeight: 46, padding: "12px 20px", border: "1px solid #173f32", borderRadius: 999, color: "#173f32", fontSize: ".88rem", fontWeight: 600, letterSpacing: ".02em", whiteSpace: "nowrap" }}>Partager sur LinkedIn ↗</a>
         </div>
-
         <nav className="issue-navigation" aria-label="Navigation entre les numéros">
           <div>{previous && <Link href={`/numeros/${previous.slug}`}>← N°{previous.numero} · {previous.title}</Link>}</div>
           <Link href="/#numeros" className="all-issues-link">Tous les Numéros</Link>
