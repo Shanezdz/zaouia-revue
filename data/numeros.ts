@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 24,
+    slug: "de-quoi-sommes-nous-responsables-envers-ceux-qui-ne-sont-pas-encore-la",
+    title: "De quoi sommes-nous responsables envers ceux qui ne sont pas encore là ?",
+    subtitle: "Mettre les générations futures au cœur de la décision présente.",
+    image: "/images/numero-24.png",
+    imageWidth: 1672,
+    imageHeight: 941,
+    theme: "Générations futures · Vivant · Gouvernance · Environnement",
+    keywords: ["Générations futures", "Vivant", "Gouvernance", "Environnement", "Ressources", "Patrimoine", "Dette intergénérationnelle", "Prospective", "Algérie"],
+  },
+  {
     numero: 23,
     slug: "une-entreprise-n-habite-jamais-seule-un-territoire",
     title: "Une entreprise n’habite jamais seule un territoire",
