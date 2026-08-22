@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 23,
+    slug: "une-entreprise-n-habite-jamais-seule-un-territoire",
+    title: "Une entreprise n’habite jamais seule un territoire",
+    subtitle: "Responsabilité territoriale, interdépendances et effets cumulatifs.",
+    image: "/images/numero-23.png",
+    imageWidth: 1640,
+    imageHeight: 920,
+    theme: "Territoires · Vivant · Communautés · Environnement",
+    keywords: ["Territoires", "Vivant", "Communautés", "Environnement", "Responsabilité territoriale", "Interdépendances", "Effets cumulatifs", "Zones industrielles", "PME", "Algérie"],
+  },
+  {
     numero: 22,
     slug: "ecouter-n-est-pas-consulter",
     title: "Écouter n’est pas consulter",
