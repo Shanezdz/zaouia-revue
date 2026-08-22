@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 17,
+    slug: "qui-repond-de-ce-que-personne-ne-decide-seul",
+    title: "Qui répond de ce que personne ne décide seul ?",
+    subtitle: "Responsabilité distribuée, arbitrages et gouvernance complexe.",
+    image: "/images/numero-17.png",
+    imageWidth: 1640,
+    imageHeight: 920,
+    theme: "Gouvernance · Responsabilité · Gouvernance de l’organisation",
+    keywords: ["Gouvernance", "Responsabilité", "Redevabilité", "Arbitrage", "Systèmes complexes", "Boucles de rétroaction", "Institutions publiques", "Collectivités", "Entreprises", "Algérie"],
+  },
+  {
     numero: 16,
     slug: "la-vulnerabilite-n-est-pas-une-marge",
     title: "La vulnérabilité n’est pas une marge",
