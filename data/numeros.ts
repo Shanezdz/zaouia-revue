@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 21,
+    slug: "mesurer-n-est-pas-encore-rendre-compte",
+    title: "Mesurer n’est pas encore rendre compte",
+    subtitle: "Passer des indicateurs à la matérialité, à la preuve et à la redevabilité.",
+    image: "/images/numero-21.png",
+    imageWidth: 1640,
+    imageHeight: 920,
+    theme: "Mesure · Gouvernance · Redevabilité · Matérialité",
+    keywords: ["Mesure", "Gouvernance", "Redevabilité", "Matérialité", "Indicateurs", "Preuve", "Reporting", "Transparence", "RSO", "Algérie"],
+  },
+  {
     numero: 20,
     slug: "ce-que-la-chaine-de-valeur-rend-invisible",
     title: "Ce que la chaîne de valeur rend invisible",
