@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 22,
+    slug: "ecouter-n-est-pas-consulter",
+    title: "Écouter n’est pas consulter",
+    subtitle: "Repenser le dialogue avec les parties prenantes au-delà des dispositifs formels.",
+    image: "/images/numero-22.png",
+    imageWidth: 1640,
+    imageHeight: 920,
+    theme: "Relations · Gouvernance · Communautés · Droits humains",
+    keywords: ["Écoute", "Consultation", "Concertation", "Participation", "Parties prenantes", "Gouvernance", "Communautés", "Droits humains", "Redevabilité", "Algérie"],
+  },
+  {
     numero: 21,
     slug: "mesurer-n-est-pas-encore-rendre-compte",
     title: "Mesurer n’est pas encore rendre compte",
