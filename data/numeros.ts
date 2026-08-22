@@ -12,6 +12,17 @@ export type Numero = {
 
 export const numeros: Numero[] = [
   {
+    numero: 18,
+    slug: "l-intelligence-artificielle-a-une-empreinte",
+    title: "L’intelligence artificielle a une empreinte",
+    subtitle: "Le vert ne peut rester une couleur.",
+    image: "/images/numero-18.webp",
+    imageWidth: 1400,
+    imageHeight: 788,
+    theme: "Technologies · Eau · RSO · Algérie",
+    keywords: ["Intelligence artificielle", "Eau", "Sobriété numérique", "RSO", "Infrastructures", "Responsabilité", "Services publics", "Territoires", "Algérie"],
+  },
+  {
     numero: 17,
     slug: "qui-repond-de-ce-que-personne-ne-decide-seul",
     title: "Qui répond de ce que personne ne décide seul ?",
